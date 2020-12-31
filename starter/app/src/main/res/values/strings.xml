@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">ShoeStore</string>
+    <string name="login_button">Login</string>
+    <string name="login_with_account_button">Login with existing account</string>
+    <string name="login_email_presenter">Your email:</string>
+    <string name="login_password_presenter">Your password:</string>
+    <string name="take_me_to_instructions">Take me to the instructions!</string>
+    <string name="welcome_first_message">Welcome to shoe shop!</string>
+    <string name="welcome_second_message">Here you can find all your favourite shoes. While we are \n
+        still improving our app, you can navigate in a very good and up to date shoe inventory. \n
+        Make the most of your day and order a new pair today! \n
+        To proceed to the instructions, click the "Take me to instructions!" button below.</string>
+    <string name="instructions_first_message">How to use the shoe shop:</string>
+    <string name="instructions_second_message">In the next screen you will be prompted to a list of \n
+    shoes, which made up our inventory. You can scroll through the shoe list, or you can click to see details of a single product. \n
+    To check the detail of a product, simply tap the image or the row that belongs to the item.</string>
+    <string name="take_me_to_shop">Take me to the shop!</string>
 </resources>
