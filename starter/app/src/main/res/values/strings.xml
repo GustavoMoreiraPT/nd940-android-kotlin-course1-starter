@@ -15,4 +15,5 @@
     shoes, which made up our inventory. You can scroll through the shoe list, or you can click to see details of a single product. \n
     To check the detail of a product, simply tap the image or the row that belongs to the item.</string>
     <string name="take_me_to_shop">Take me to the shop!</string>
+    <string name="add_shoe">Add shoe</string>
 </resources>
