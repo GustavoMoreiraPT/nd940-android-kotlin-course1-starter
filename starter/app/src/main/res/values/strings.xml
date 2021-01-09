@@ -16,4 +16,11 @@
     To check the detail of a product, simply tap the image or the row that belongs to the item.</string>
     <string name="take_me_to_shop">Take me to the shop!</string>
     <string name="add_shoe">Add shoe</string>
+    <string name="shoe_size">Shoe size:</string>
+    <string name="shoe_name">Shoe Name:</string>
+    <string name="company">Company:</string>
+    <string name="description">Description:</string>
+    <string name="logout">Logout</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
 </resources>
