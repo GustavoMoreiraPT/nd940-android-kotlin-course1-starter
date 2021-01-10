@@ -1,9 +1,7 @@
 package com.udacity.shoestore.screens.listing
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.EditText
 import android.widget.TextView
 import androidx.databinding.BindingAdapter
@@ -16,6 +14,7 @@ import com.udacity.shoestore.databinding.ListingFragmentBinding
 import androidx.lifecycle.Observer
 import com.udacity.shoestore.databinding.DetailFragmentBinding
 import androidx.fragment.app.activityViewModels
+import com.udacity.shoestore.databinding.ShoeDetailBinding
 
 class ListingFragment: Fragment() {
 
@@ -38,13 +37,30 @@ class ListingFragment: Fragment() {
             binding.inventory.removeAllViews()
             list.forEach { shoe ->
                 val inflater = LayoutInflater.from(binding.inventory.context)
-                val binding: DetailFragmentBinding =
-                        DetailFragmentBinding.inflate(inflater, binding.inventory, true)
+                val binding: ShoeDetailBinding =
+                        ShoeDetailBinding.inflate(inflater, binding.inventory, true)
                 binding.shoe = shoe
             }
 
         })
         setHasOptionsMenu(true)
         return binding.root
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.app_menu, menu)
+        super.onCreateOptionsMenu(menu, inflater)
+    }
+
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.logout -> {
+                findNavController().navigateUp()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+
     }
 }
