@@ -24,6 +24,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
+            <!-- And here it is better to use a LinearLayout since the design inside the scrollview is just the shoe information
+            stacked on top of each other, so no need to use constraint layout.-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -10,6 +10,9 @@
             type="com.udacity.shoestore.screens.welcome.WelcomeViewModel" />
     </data>
 
+    <!-- Since the Welcome screen only had 2 text views and button as requirements, and no special
+    relative positioning between them was required, the Linear layout seemed as the obvious choice, since it's
+    easier to implement, requires less effort for the developer, while it still serves the purpose.-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

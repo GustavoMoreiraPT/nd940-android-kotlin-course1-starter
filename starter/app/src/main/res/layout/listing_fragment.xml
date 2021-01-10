@@ -10,6 +10,8 @@
             type="com.udacity.shoestore.models.Shoe" />
     </data>
 
+    <!-- To use a scroll view and the floating action button, it seemed that Constraint Layout was the better choice
+    to implement this screen.-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/title_layout"
         android:layout_width="match_parent"

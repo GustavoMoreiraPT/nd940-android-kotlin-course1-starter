@@ -10,6 +10,11 @@
             type="com.udacity.shoestore.screens.login.LoginViewModel" />
     </data>
 
+    <!-- The login screen was complex in the sense that it needs two buttons.
+    Although there was no special requirement saying that the 2 buttons should be aligned horizontally,
+    I felt it's good UX practice to do so. And the best way to solve it was to use a Constraint Layout.
+    In this way, I can have the two text views and the 2 edit views vertically aligned and the
+    buttons horizontally aligned.-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/login_layout"
         android:layout_width="match_parent"

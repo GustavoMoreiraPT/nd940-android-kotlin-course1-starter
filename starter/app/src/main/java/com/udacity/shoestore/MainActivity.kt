@@ -21,13 +21,10 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var drawerLayout: DrawerLayout
-    private lateinit var appBarConfiguration : AppBarConfiguration
     private lateinit var listViewModel: ListingViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.activity_main)
         Timber.plant(Timber.DebugTree())
         val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.myNavHostFragment) as NavHostFragment
@@ -47,21 +44,5 @@ class MainActivity : AppCompatActivity() {
             setSupportActionBar(binding.toolbar)
             binding.toolbar.setupWithNavController(it, appBarConfiguration)
         }
-    }
-
-    override fun onSupportNavigateUp(): Boolean {
-        val navController = this.findNavController(R.id.myNavHostFragment)
-        return NavigationUI.navigateUp(navController, appBarConfiguration)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            R.id.logout -> {
-                findNavController(R.id.myNavHostFragment).navigateUp()
-                true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
-
     }
 }

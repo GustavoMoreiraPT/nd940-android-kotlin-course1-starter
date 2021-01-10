@@ -26,7 +26,10 @@
         android:label="InstructionsFragment" >
         <action
             android:id="@+id/action_instructionsFragment_to_listingFragment"
-            app:destination="@id/listingFragment" />
+            app:destination="@id/listingFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="false"/>
     </fragment>
     <fragment
         android:id="@+id/listingFragment"
