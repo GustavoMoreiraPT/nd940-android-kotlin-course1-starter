@@ -33,7 +33,7 @@ class DetailFragment : Fragment() {
         binding.shoe = shoe
 
         binding.cancelButton.setOnClickListener {
-            findNavController().navigate(ListingFragmentDirections.actionListingFragmentToDetailFragment())
+            findNavController().navigate(DetailFragmentDirections.actionDetailFragmentToListingFragment())
         }
 
         binding.saveButton.setOnClickListener {
