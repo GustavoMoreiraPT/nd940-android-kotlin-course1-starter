@@ -64,7 +64,7 @@ class ListingFragment: Fragment() {
 
     }
 
-    @BindingAdapter
+    /*@BindingAdapter
     fun bindDoubleInText(tv: EditText, value: Double) {
         tv.setText(value.toString())
     }
@@ -73,6 +73,6 @@ class ListingFragment: Fragment() {
     fun getDoubleFromBinding(view: TextView): Double {
         val string = view.text.toString()
         return if (string.isEmpty()) 0.0 else string.toDouble()
-    }
+    }*/
 
 }

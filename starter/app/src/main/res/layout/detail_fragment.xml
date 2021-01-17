@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+        <import type="com.udacity.shoestore.utils.Converter"/>
         <variable
             name="shoe"
             type="com.udacity.shoestore.models.Shoe" />
@@ -97,7 +98,7 @@
                     android:layout_marginEnd="@dimen/default_margin"
                     android:imeOptions="actionNext"
                     android:inputType="numberDecimal"
-                    android:text="@={shoe.size}"
+                    android:text="@={Converter.doubleToString(shoe.size)}"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
