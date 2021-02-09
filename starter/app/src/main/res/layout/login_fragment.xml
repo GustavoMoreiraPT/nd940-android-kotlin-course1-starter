@@ -91,6 +91,25 @@
             app:layout_constraintHorizontal_bias="0.909"
             app:layout_constraintStart_toStartOf="parent" />
 
+        <Button
+            android:id="@+id/ttsButtonAlexa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alexa"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/ttsButtonBenson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Benson"
+            app:layout_constraintBottom_toTopOf="@+id/ttsButtonAlexa"
+            app:layout_constraintStart_toEndOf="@+id/ttsButtonAlexa"
+            app:layout_constraintTop_toBottomOf="@+id/ttsButtonAlexa"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
